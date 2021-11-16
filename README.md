@@ -28,6 +28,14 @@ Execute the following commands
 - IOS     `npx wdio test-configs/ios.conf.js --spec ./src/tests/landing.test.js`
 - Andriod `npx wdio test-configs/android.conf.js --spec ./src/tests/landing.test.js`
 
+### Executing the full test suite parallelly on locally plugged real/emulator device
+
+Open two instaces of appium server on any available ports such as 
+1. `appium -p 6000`
+2. `appium -p 7000`
+3. `npx wdio test-configs/parallel.conf.js`
+
+
 ## Extending Test suites with more test cases
 
 This framework follows the concepts of page object model. 
@@ -48,5 +56,3 @@ execute `allure open`
 - **browserstack-service:** `7.16.6`
 - **mocha:** `7.16.6`
 - **chai:** `4.3.4`
-
-
