@@ -7,7 +7,7 @@ This is an test automation framework to run User Interface test cases on Textplu
 2. Install Appium on a local machine [here](https://github.com/webdriverio/appium-boilerplate/blob/main/docs/APPIUM.md)
 3. Setting up Android and iOS on a local machine [here](https://github.com/webdriverio/appium-boilerplate/blob/main/docs/ANDROID_IOS_SETUP.md)
 4. Install the app on the Virtual/Real Devices [here](./app)
-5. For IOS Read Devices only, Install Webdriver Agent [Appium](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/#appium-xcuitest-driver-real-device-setup) [Github-WebdriverAgent](https://github.com/facebookarchive/WebDriverAgent)
+5. For IOS Read Devices only, Install Webdriver Agent either using [Appium](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/#appium-xcuitest-driver-real-device-setup) or [Github-WebdriverAgent](https://github.com/facebookarchive/WebDriverAgent)
 
 ## Installation
 
