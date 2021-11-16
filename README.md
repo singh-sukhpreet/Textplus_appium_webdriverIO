@@ -1,4 +1,4 @@
-# Textplus
+# Textplus Automation Framework
 This is an test automation framework to run User Interface test cases on Textplus mobile application
 
 ## prerequisites
@@ -13,4 +13,40 @@ This is an test automation framework to run User Interface test cases on Textplu
 
 1. Clone git repository - `git clone {URL}`
 2. Go to the project folder and install dependencies - `npm install`
+
+## Running Tests
+
+Execute the following commands
+
+### Executing the full test suite on locally plugged real/emulator device
+
+- IOS     `npx wdio test-configs/ios.conf.js` located at [ios.conf.js](./test-configs/ios.conf.js)
+- Andriod `npx wdio test-configs/android.conf.js` located at [android.conf.js](./test-configs/android.conf.js) 
+
+### Executing the specific test suite on locally plugged real/emulator device
+
+- IOS     `npx wdio test-configs/ios.conf.js --spec ./src/tests/landing.test.js`
+- Andriod `npx wdio test-configs/android.conf.js --spec ./src/tests/landing.test.js`
+
+## Extending Test suites with more test cases
+
+This framework follows the concepts of page object model. 
+- All the test files are located in src/tests folder such as [landing.test.js](./src/tests/landing.test.js)
+- All the page object files are located in src/pages folder such as [login.page.js](./src/pageobjects/login.page.js)
+- All the test data files are located in src/resources folder such as [test_data.js](./src/resources/test_data.js)
+- All the utilities files are located in src/utilities folder such as [common.utils.js](./src/utilities/common.utils.js)
+- All the configs files are located in test-configs folder such as [ios.conf.js](./test-configs/ios.conf.js)
+
+## To generate allure reports
+
+execute `allure open`
+
+## Architecture based on
+- **WebdriverIO:** `7.16.6`
+- **Appium:** `1.22.0`
+- **Allure:** `7.16.6`
+- **browserstack-service:** `7.16.6`
+- **mocha:** `7.16.6`
+- **chai:** `4.3.4`
+
 
