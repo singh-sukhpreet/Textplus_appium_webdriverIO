@@ -1,0 +1,5 @@
+node_modules/
+allure-reports/
+allure-results/
+.DS_Store
+apps/
