@@ -1,15 +1,16 @@
 # Textplus
 This is an test automation framework to run User Interface test cases on Textplus hybrid app
 
-## 
+## prerequisites
+
+1. Install the LTS version of [NODE.js](https://nodejs.org/en/)
+2. Install Appium on a local machine [here](https://github.com/webdriverio/appium-boilerplate/blob/main/docs/APPIUM.md)
+3. Setting up Android and iOS on a local machine [here](https://github.com/webdriverio/appium-boilerplate/blob/main/docs/ANDROID_IOS_SETUP.md)
+4. Install the app on the Virtual/Real Devices [here](./app)
+5. For IOS Read Devices only, Install Webdriver Agent [1.](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/#appium-xcuitest-driver-real-device-setup) [2.](https://github.com/facebookarchive/WebDriverAgent)
 
 ## Installation
 
-1. Install the LTS version of [NODE.js](https://nodejs.org/en/)
-2. Clone git repository by running `git clone {URL}`
-3. Running `npm install`
-4. Installing Appium on a local machine [here](./docs/APPIUM.md)
-5. Setting up Android and iOS on a local machine [here](./docs/ANDROID_IOS_SETUP.md)
-6. Making demo app available. Create a `./apps` directory. Download the app files (.app / .apk) with version >= `0.4.0`
-[here](https://github.com/webdriverio/native-demo-app/releases). Move the files into the directory `apps`.
-6. Running tests `npm run android.app` or `npm run android.app`
+1. Clone git repository - `git clone {URL}`
+2. Go to the project folder and install dependencies - `npm install`
+
