@@ -1,5 +1,5 @@
 # Textplus
-This is an test automation framework to run User Interface test cases on Textplus hybrid app
+This is an test automation framework to run User Interface test cases on Textplus mobile application
 
 ## prerequisites
 
