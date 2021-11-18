@@ -6,7 +6,7 @@
 class CommonUtilities {
     
     get btnAllow() {
-        const selectorAndroid = '//*[@text="ALLOW"]'
+        const selectorAndroid = '//*[@text="ALLOW"] | //*[@text="Allow"]'
         const selectorIOS = '~Allow'
         const selector = driver.isAndroid ? selectorAndroid : selectorIOS
         return $(selector)
@@ -42,4 +42,4 @@ class CommonUtilities {
     }
 
 }
-module.exports = new CommonUtilities();
+export default new CommonUtilities();

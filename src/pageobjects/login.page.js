@@ -53,6 +53,11 @@ class LoginPage {
 
     async login (username, password) {
         allureReporter.addStep(`Input Username as ${username}`)
+        await browser.pause(2000);
+        if(await Utils.btnAllow.isExisting()){
+            allureReporter.addStep('Allow the app to access Device Location')
+            await Utils.click_btnAllow();
+        }
         await this.inputUsername.waitForDisplayed()
         await this.inputUsername.setValue(username);
         allureReporter.addStep('Input Password')

@@ -35,6 +35,9 @@ Open two instaces of appium server on any available ports such as
 2. `appium -p 7000`
 3. `npx wdio test-configs/parallel.conf.js`
 
+### Executing the full test suite on browserstack
+
+`npx wdio test-configs/browserstack.conf.js`
 
 ## Extending Test suites with more test cases
 

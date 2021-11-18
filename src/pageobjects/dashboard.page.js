@@ -20,6 +20,7 @@ class Dashboard {
     async verify_login() {
         allureReporter.addStep('Verifying Top Navigation is visible after login')
         await browser.pause(2000);
+        await this.tabBar.waitForDisplayed();
         browser.takeScreenshot();
         await expect(this.tabBar).toBeDisplayed({ message: 'Login is not successful!', wait: 1000})
     } 

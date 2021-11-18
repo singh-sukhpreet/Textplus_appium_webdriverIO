@@ -1,5 +1,5 @@
 const VALID_CREDS = {
-    username: 'TPAUTOMATION-2',
+    username: 'TPAUTOMATION-1',
     password: 'TP@Test123'
 }
 

@@ -1,6 +1,9 @@
 const allure = require('allure-commandline');
 let chai = require("chai")
 exports.config = {
+
+    user: process.env.BROWSERSTACK_USERNAME || 'sukhpreet_nWRSbX',
+    key: process.env.BROWSERSTACK_ACCESS_KEY || 'QxtwQETpy4BMkDi6wzYC',
     //
     // ====================
     // Runner Configuration
@@ -8,7 +11,7 @@ exports.config = {
     //
     runner: 'local',
     // port: 4723,
-    path: '/wd/hub',
+    // path: '/wd/hub',
     //
     // ==================
     // Specify Test Files
@@ -55,7 +58,15 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
+    capabilities: [{
+        // project: "First Webdriverio Android Project",
+        // build: "browserstack-build-1",
+        // name: "local_test",
+        "platformName": "Android",
+        "appium:deviceName": "Google Pixel 3",
+        "appium:platformVersion": "9.0",
+        "appium:app": process.env.BROWSERSTACK_APP_ID || 'bs://9a2e6e589494f40f8db032feb85573200fdd93a1',
+        // 'browserstack.local': true
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
@@ -63,32 +74,11 @@ exports.config = {
         // //
         // browserName: 'chrome',
         // acceptInsecureCerts: true
-        {
-            "appium:platformName": "Android",
-            "appium:automationName": "UiAutomator2",
-            "appium:udid": "emulator-5554",
-            "appium:appPackage": "me.nextplus.smsfreetext.phonecalls",
-            "appium:appActivity": "com.nextplus.android.activity.SplashScreenActivity",
-            "appium:deviceName": "Pixel 5",
-            "appium:systemPort": 6001,
-            port: 6000,
-            
-        },
-        {
-            "platformName": "iOS",
-            "appium:automationName": "XCUITest",
-            "appium:app": "/Users/sukhpreetsingh/learning/Appium/framework_textplus/app/nextplus.app",
-            "appium:udid": "9953473F-FE95-4451-B112-B4212D240425",
-            "appium:deviceName": "iPhone 11 Pro",
-            "appium:wdaLocalPort": 8101,
-            port: 7000,
-            
-        }
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-    ],
+    }],
     //
     // ===================
     // Test Configurations
@@ -143,6 +133,11 @@ exports.config = {
     //         "allow-insecure": 'chromedriver_autodownload'
     //     }]
     // ],
+    services: [
+        ['browserstack', {
+            browserstackLocal: true
+        }]
+    ],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

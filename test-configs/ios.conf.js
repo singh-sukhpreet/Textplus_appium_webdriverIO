@@ -4,7 +4,7 @@ config.capabilities = [{
     "platformName": "iOS",
     "appium:deviceName": "iPhone 11 Pro",
     "appium:automationName": "XCUITest",
-    "appium:app": "/Users/sukhpreetsingh/learning/Appium/framework_textplus/app/nextplus.app",
+    "appium:app": "./app/nextplus.app",
     // "appium:bundleId": "me.nextplus.smsfreetext.phonecalls",
     // iphone 11 pro udid's 
     "appium:udid": "9953473F-FE95-4451-B112-B4212D240425"
