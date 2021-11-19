@@ -37,7 +37,7 @@ Open two instaces of appium server on any available ports such as
 
 ### Executing the full test suite on browserstack
 
-`npx wdio test-configs/browserstack.conf.js`
+`BROWSERSTACK_USERNAME={Your_username} BROWSERSTACK_ACCESS_KEY={Your_access_key} npx wdio test-configs/browserstack.conf.js`
 
 ## Extending Test suites with more test cases
 
