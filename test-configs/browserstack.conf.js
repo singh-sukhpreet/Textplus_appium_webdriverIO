@@ -2,8 +2,8 @@ const allure = require('allure-commandline');
 let chai = require("chai")
 exports.config = {
 
-    user: process.env.BROWSERSTACK_USERNAME || 'sukhpreet_nWRSbX',
-    key: process.env.BROWSERSTACK_ACCESS_KEY || 'QxtwQETpy4BMkDi6wzYC',
+    user: process.env.BROWSERSTACK_USERNAME,
+    key: process.env.BROWSERSTACK_ACCESS_KEY,
     //
     // ====================
     // Runner Configuration
