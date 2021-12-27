@@ -71,7 +71,7 @@ This tool is mainly used to view the UI-hierarchy and locate elements to be sure
 
 See the [readme](https://github.com/appium/appium-desktop) about how to use the Appium Desktop.
 
-When Appium Destkop is started make sure the _Automatic Server_-tab is enabled. Use the following settings for Android (also check [here](../config/wdio.android.app.conf.ts))
+When Appium Destkop is started make sure the _Automatic Server_-tab is enabled. Use the following settings for Android (also check [here](../test-configs/android.conf.js))
 
 ```js
 {
