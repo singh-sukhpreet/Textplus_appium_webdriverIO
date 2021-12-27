@@ -8,6 +8,7 @@ This is an test automation framework to run User Interface test cases on Textplu
 3. Setting up Android and iOS on a local machine [here](./docs/ANDROID_IOS_SETUP.md)
 4. Place the .app and .apk files [here](./app)
 5. For IOS Read Devices only, Install Webdriver Agent either using [Appium](https://appium.io/docs/en/drivers/ios-xcuitest-real-devices/#appium-xcuitest-driver-real-device-setup) or [Github-WebdriverAgent](https://github.com/facebookarchive/WebDriverAgent)
+6. For complete manual instructions follow this doc - [Instructions.pdf](./docs/Instructions.pdf)
 
 ## Installation
 
